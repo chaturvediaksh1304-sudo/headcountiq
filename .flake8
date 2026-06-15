@@ -1,0 +1,7 @@
+[flake8]
+max-line-length = 120
+# E501: line length (handled by max-line-length anyway)
+# W503: line break before binary operator (conflicts with black)
+# E128: continuation line under-indented (conflicts with black-style call args)
+extend-ignore = E501,W503,E128
+exclude = .git,__pycache__,frontend,.venv
